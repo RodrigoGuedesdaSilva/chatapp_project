@@ -1,0 +1,198 @@
+@media (max-width: 992px) {
+    #header {
+        padding-bottom: 100px;
+    }
+    #header .container:nth-child(2) {
+        margin-top: 0;
+    }
+    #header .container .col-lg-6 {
+        display: var(--flex);
+        flex-direction: var(--column);
+        align-items: var(--center);
+        text-align: var(--center);
+    }
+    #header .title {
+        font-size: 70px;
+        margin: 120px 0 20px;
+    }
+    #header .prg {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    #header .img-fluid {
+        margin-top: 50px;
+    }
+    #header .menu {
+        position: absolute;
+        flex-direction: var(--column);
+        align-items:stretch;
+        background-color: var(--white);
+        text-align: var(--center);
+        top: 120px;
+        right: 100%;
+        opacity: 0;
+        width: 100%;
+        padding-left: 0;
+    }
+    /* Removing navbar's button style */
+    #header .menu .link:last-child {
+        padding: 0;
+        background: transparent;
+        border-radius: 0;
+    }
+    #header .container:nth-child(1) .list {
+        line-height: 80px;
+        color: var(--light-blue);
+    }
+    #header .link .list:hover {
+        background-color: var(--dark-blue);
+        color: var(--white);
+        transition: all 0.3s ease;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+    }
+    #hamburger-menu.active .line:nth-of-type(1) {
+        transform: rotate(45deg) translate(5px, -1px);
+    }
+    #hamburger-menu.active .line:nth-of-type(2) {
+        transform: rotate(-45deg);
+    }
+    #hamburger-menu.active .line:nth-of-type(3) {
+        transform: rotate(45deg) translate(-5px, -3px);
+    }
+    #header .menu.is-active {
+        right: 0;
+        opacity: 1;
+    }
+    #hamburger-menu.active .line,
+    .line,
+    #header .menu.is-active,
+    #header .menu {
+        transition: all 0.8s ease;
+    }
+
+    #download {
+        padding-top: 80px;
+    }
+    #download .container {
+        align-items: var(--center);
+    }
+    #download h1 {
+        line-height: 70px;
+        font-size: 60px;
+    }
+    #download p {
+        font-size: 18px;
+    }
+    #download h1,
+    #download p {
+        text-align: var(--center);
+    }
+    #download .btn{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #download .btn .link:nth-of-type(1) {
+        margin: 0 18px;
+    }
+    #download .dividor {
+        width: 75px;
+        margin: 25px auto 20px;
+    }
+    #download .rating {
+        margin: 0 auto;
+    }
+
+    #footer {
+        padding: 90px 0 30px;
+    }
+    #footer .container:last-child .centering-items {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #footer .container:last-child div:nth-child(3) a {
+        margin: 15px 15px 0;
+    }
+    #footer .container:last-child div:nth-child(3) {
+        margin: 0 auto ;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer .container:last-child .centering-items {
+        justify-content: space-around;
+    }
+    #footer .centering-items p,
+    #footer .centering-items a{
+        font-size: 12px;
+}
+}
+
+
+@media (max-width: 576px) {
+    #header .title {
+        font-size: 50px;
+        margin: 115px 0 20px;
+    }
+    .dividor {
+        margin: 100px 0 40px;
+    }
+    #feature .img-fluid {
+        margin: 0 auto 50px;
+    }
+    #feature p {
+        font-size: 18px;
+        opacity: 0.9;
+    }
+    .benefit img:nth-child(1) {
+        margin-right: 15px;
+        margin-bottom: 50px;
+    }
+    .benefit img:nth-child(2) {
+        margin-left: 15px;
+        margin-bottom: 50px;
+    }
+    #download {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    #download h1 {
+        line-height: 60px;
+        font-size: 55px;
+    }
+    #download p {
+        font-size: 16px;
+    }
+    #download h1,
+    #download p {
+        margin: 25px 0;
+    }
+    #download .btn{
+        display: var(--flex);
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    #download .btn .link:nth-of-type(1) {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    #download .rating {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 389px) {
+    #download h1 {
+        line-height: 45px;
+        font-size: 40px;
+    }
+    #footer .centering-items div:nth-child(2) a{
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
